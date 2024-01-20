@@ -16,7 +16,7 @@
             <input type="text" id="l2-company" placeholder="Company Name">
             <input type="text" id="l2-industry" placeholder="Industry">
             <button onclick="sendBuildL2Request()">Build L2 Graph</button>
-            <p id="l2-response"></p>
+            <div id="l2-response" class="response"></div>
         </section>
 
         <!-- Build L3 Graph Section -->
@@ -26,7 +26,7 @@
             <input type="text" id="l3-industry" placeholder="Industry">
             <input type="text" id="l3-urls" placeholder="URLs (comma-separated)">
             <button onclick="sendBuildL3Request()">Build L3 Graph</button>
-            <p id="l3-response"></p>
+            <div id="l3-response" class="response"></div>
         </section>
 
         <!-- Compare Terms Section -->
@@ -38,7 +38,7 @@
             <input type="text" id="industry2" placeholder="Industry 2">
             <input type="text" id="term" placeholder="Term to Compare">
             <button onclick="sendCompareRequest()">Compare Terms</button>
-            <p id="compare-response"></p>
+            <div id="compare-response" class="response"></div>
         </section>
 
         <!-- Query Graph Section -->
@@ -50,7 +50,7 @@
             <input type="text" id="query-query" placeholder="Query">
             <input type="text" id="query-mode" placeholder="Mode">
             <button onclick="sendQueryRequest()">Query Graph</button>
-            <p id="query-response"></p>
+            <div id="query-response" class="response"></div>
         </section>
     </div>
 
