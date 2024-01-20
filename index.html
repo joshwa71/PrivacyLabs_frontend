@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrivacyLabs Graph Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PrivacyLabs Graph Interface</h1>
+
+        <!-- Build L2 Graph Section -->
+        <section id="build-l2-section">
+            <h2>Build L2 Graph</h2>
+            <input type="text" id="l2-company" placeholder="Company Name">
+            <input type="text" id="l2-industry" placeholder="Industry">
+            <button onclick="sendBuildL2Request()">Build L2 Graph</button>
+            <p id="l2-response"></p>
+        </section>
+
+        <!-- Build L3 Graph Section -->
+        <section id="build-l3-section">
+            <h2>Build L3 Graph</h2>
+            <input type="text" id="l3-company" placeholder="Company Name">
+            <input type="text" id="l3-industry" placeholder="Industry">
+            <input type="text" id="l3-urls" placeholder="URLs (comma-separated)">
+            <button onclick="sendBuildL3Request()">Build L3 Graph</button>
+            <p id="l3-response"></p>
+        </section>
+
+        <!-- Compare Terms Section -->
+        <section id="compare-section">
+            <h2>Compare Terms</h2>
+            <input type="text" id="company1" placeholder="Company 1">
+            <input type="text" id="industry1" placeholder="Industry 1">
+            <input type="text" id="company2" placeholder="Company 2">
+            <input type="text" id="industry2" placeholder="Industry 2">
+            <input type="text" id="term" placeholder="Term to Compare">
+            <button onclick="sendCompareRequest()">Compare Terms</button>
+            <p id="compare-response"></p>
+        </section>
+
+        <!-- Query Graph Section -->
+        <section id="query-section">
+            <h2>Query Graph</h2>
+            <input type="text" id="query-company" placeholder="Company Name">
+            <input type="text" id="query-industry" placeholder="Industry">
+            <input type="text" id="query-layer" placeholder="Layer">
+            <input type="text" id="query-query" placeholder="Query">
+            <input type="text" id="query-mode" placeholder="Mode">
+            <button onclick="sendQueryRequest()">Query Graph</button>
+            <p id="query-response"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
