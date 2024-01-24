@@ -2,7 +2,7 @@ function sendBuildL2Request() {
     const company = document.getElementById('l2-company').value;
     const industry = document.getElementById('l2-industry').value;
 
-    fetch('http://localhost:8080/build_l2', {
+    fetch('https://privacy-labs-graphs-6bz7xclj5a-wl.a.run.app/build_l2', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ function sendBuildL3Request() {
     const industry = document.getElementById('l3-industry').value;
     const urls = document.getElementById('l3-urls').value.split(',');
 
-    fetch('http://localhost:8080/build_l3', {
+    fetch('https://privacy-labs-graphs-6bz7xclj5a-wl.a.run.app/build_l3', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ function sendCompareRequest() {
     const industry2 = document.getElementById('industry2').value;
     const term = document.getElementById('term').value;
 
-    fetch('http://localhost:8080/compare_terms', {
+    fetch('https://privacy-labs-graphs-6bz7xclj5a-wl.a.run.app/compare_terms', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ function sendQueryRequest() {
     const query = document.getElementById('query-query').value;
     const mode = document.getElementById('query-mode').value;
 
-    fetch('http://localhost:8080/query', {
+    fetch('https://privacy-labs-graphs-6bz7xclj5a-wl.a.run.app/query', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
