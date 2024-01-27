@@ -14,7 +14,6 @@
         <section id="build-l2-section">
             <h2>Build L2 Graph</h2>
             <input type="text" id="l2-company" placeholder="Company Name">
-            <input type="text" id="l2-industry" placeholder="Industry">
             <button onclick="sendBuildL2Request()">Build L2 Graph</button>
             <div id="l2-response" class="response"></div>
         </section>
@@ -23,7 +22,6 @@
         <section id="build-l3-section">
             <h2>Build L3 Graph</h2>
             <input type="text" id="l3-company" placeholder="Company Name">
-            <input type="text" id="l3-industry" placeholder="Industry">
             <input type="text" id="l3-urls" placeholder="URLs (comma-separated)">
             <button onclick="sendBuildL3Request()">Build L3 Graph</button>
             <div id="l3-response" class="response"></div>
@@ -33,9 +31,7 @@
         <section id="compare-section">
             <h2>Compare Terms</h2>
             <input type="text" id="company1" placeholder="Company 1">
-            <input type="text" id="industry1" placeholder="Industry 1">
             <input type="text" id="company2" placeholder="Company 2">
-            <input type="text" id="industry2" placeholder="Industry 2">
             <input type="text" id="term" placeholder="Term to Compare">
             <button onclick="sendCompareRequest()">Compare Terms</button>
             <div id="compare-response" class="response"></div>
@@ -45,12 +41,28 @@
         <section id="query-section">
             <h2>Query Graph</h2>
             <input type="text" id="query-company" placeholder="Company Name">
-            <input type="text" id="query-industry" placeholder="Industry">
             <input type="text" id="query-layer" placeholder="Layer">
             <input type="text" id="query-query" placeholder="Query">
             <input type="text" id="query-mode" placeholder="Mode">
             <button onclick="sendQueryRequest()">Query Graph</button>
             <div id="query-response" class="response"></div>
+        </section>
+
+        <!-- Get Nodes Section -->
+        <section id="get-nodes-section">
+            <h2>Get Nodes</h2>
+            <input type="text" id="get-nodes-company" placeholder="Company Name">
+            <input type="text" id="get-nodes-layer" placeholder="Layer">
+            <button onclick="sendGetNodesRequest()">Get Nodes</button>
+            <div id="get-nodes-response" class="response"></div>
+        </section>
+
+        <!-- Get Node Count Section -->
+        <section id="get-node-count-section">
+            <h2>Get Node Count</h2>
+            <input type="text" id="get-node-count-layer" placeholder="Layer">
+            <button onclick="sendGetNodeCountRequest()">Get Node Count</button>
+            <div id="get-node-count-response" class="response"></div>
         </section>
     </div>
 
